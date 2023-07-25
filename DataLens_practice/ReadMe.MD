@@ -6,4 +6,4 @@
 
 
 1. Дашборд по продажам. Описание и функционал на странице самого дашборда 
-https://datalens.yandex/1tvq5own2qukq (временно отклчен) 
+https://datalens.yandex/1tvq5own2qukq (временно отключен) 
