@@ -51,7 +51,7 @@
   <li><img src="https://i.postimg.cc/DZydBJYn/1.jpg" alt="Снимок 1.jpg"></li>
   <li><img src="https://i.postimg.cc/3JPsVYTP/2.jpg" alt="Снимок 2.jpg"></li>
   <li><img src="https://i.postimg.cc/yNWr8GsF/3.jpg" alt="Снимок 3.jpg"></li>
-  <li><img src="https://i.postimg.cc/43ChY7TB/4.jpg" alt="Снимок 4.jpg"></li>
+  <li><img src="https://i.postimg.cc/HnQ6NcCx/4.jpg" alt="Снимок 4.jpg"></li>
   <li><img src="https://i.postimg.cc/7PBGgQkC/5.jpg" alt="Снимок 5.jpg"></li>
 </ul>
 
