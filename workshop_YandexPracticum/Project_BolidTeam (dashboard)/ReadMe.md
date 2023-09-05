@@ -6,7 +6,7 @@
 Моя задача заключалась в изучении "сырых" данных из датасета, полученного из `ClickHouse`/загрузкой предоставленных данных, и создании Дашборда в DataLens. Этот дашборд представляет собой аналитический инструмент, который позволяет изучить различные финансовые параметры группы компаний, в срезе времени, аттракциона, региона.
 
 <h2>Инструменты:</h2> 
-### `SQL` `DataLens` `ClickHouse` 
+`SQL` `DataLens` `ClickHouse` 
 
 <h2>Ключевые возможности:</h2>
 <ul>
@@ -50,7 +50,7 @@
   <li>![Снимок 2.jpg](https://i.postimg.cc/3JPsVYTP)</li> 
   <li>![Снимок 3.jpg](https://i.postimg.cc/yNWr8GsF)</li>
   <li>![Снимок 4.jpg](https://i.postimg.cc/43ChY7TB/4.jpg)</li>
-  <li>![Снимок 5.jpg](https://i.postimg.cc/7PBGgQkC/5.jpg)</li>
+  <li>[![Снимок 5.jpg](https://i.postimg.cc/7PBGgQkC/5.jpg)](https://postimg.cc/SjMx4djq)</li>  
   
 <h2>Контактная информация:</h2>
 <ul>
