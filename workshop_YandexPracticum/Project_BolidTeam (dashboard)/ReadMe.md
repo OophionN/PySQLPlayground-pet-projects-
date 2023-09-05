@@ -45,13 +45,15 @@
 <p>Отклонение от среднего в абсолютных значениях и в процентном соотношении будет отображено на соответствующих графиках.</p>
 
 <h2>Ознакомится с дашбордом можно по [ссылке](https://datalens.yandex/hk8wbh5s41ks6)</h2>
+<p>Скриншоты:</p>
 <ul>
-  <p>Скриншоты:</p>
-  <li>![Снимок 1.jpg](https://i.postimg.cc/nsgDLzJP)</li>
-  <li>![Снимок 2.jpg](https://i.postimg.cc/3JPsVYTP)</li> 
-  <li>![Снимок 3.jpg](https://i.postimg.cc/yNWr8GsF)</li>
-  <li>![Снимок 4.jpg](https://i.postimg.cc/43ChY7TB/4.jpg)</li>
-  <li>![Снимок 5.jpg](https://i.postimg.cc/7PBGgQkC/5.jpg)</li>  
+  <li><img src="https://i.postimg.cc/nsgDLzJP" alt="Снимок 1.jpg"></li>
+  <li><img src="https://i.postimg.cc/3JPsVYTP" alt="Снимок 2.jpg"></li>
+  <li><img src="https://i.postimg.cc/yNWr8GsF" alt="Снимок 3.jpg"></li>
+  <li><img src="https://i.postimg.cc/43ChY7TB/4.jpg" alt="Снимок 4.jpg"></li>
+  <li><img src="https://i.postimg.cc/7PBGgQkC/5.jpg" alt="Снимок 5.jpg"></li>
+</ul>
+
   
 <h2>Контактная информация:</h2>
 <ul>
