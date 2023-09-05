@@ -44,10 +44,11 @@
 <h2>Визуализация отклонения</h2>
 <p>Отклонение от среднего в абсолютных значениях и в процентном соотношении будет отображено на соответствующих графиках.</p>
 
-<h2>Ознакомится с дашбордом можно по [ссылке](https://datalens.yandex/hk8wbh5s41ks6)</h2>
+<h2>Ознакомиться с дашбордом можно по <a href="https://datalens.yandex/hk8wbh5s41ks6">ссылке</a></h2>
+
 <p>Скриншоты:</p>
 <ul>
-  <li><img src="https://i.postimg.cc/nsgDLzJP/1.jpg" alt="Снимок 1.jpg"></li>
+  <li><img src="https://i.postimg.cc/DZydBJYn/1.jpg" alt="Снимок 1.jpg"></li>
   <li><img src="https://i.postimg.cc/3JPsVYTP/2.jpg" alt="Снимок 2.jpg"></li>
   <li><img src="https://i.postimg.cc/yNWr8GsF/3.jpg" alt="Снимок 3.jpg"></li>
   <li><img src="https://i.postimg.cc/43ChY7TB/4.jpg" alt="Снимок 4.jpg"></li>
