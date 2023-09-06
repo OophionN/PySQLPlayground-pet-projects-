@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Анализ продаж автомобилей в Казахстане</title>
-  <style>
-    body {
-      font-family: 'Liberation Serif', serif;
-    }
-  </style>
-</head>
 <body>
 
 <h1 style="font-size: 24px;">Описание Проекта</h1>
