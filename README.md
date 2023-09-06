@@ -2,7 +2,7 @@
 <html>
 <body>
 
-  <h1>PySQLPlayground: Моя игровая площадка для Python и SQL</h1>
+  <h1>PySQLPlayground-pet-projects: Моя игровая площадка для Python и SQL</h1>
 
   <h2>Описание репозитория</h2>
   <p>
