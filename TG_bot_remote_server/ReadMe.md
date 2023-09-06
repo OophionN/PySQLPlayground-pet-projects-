@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Telegram Bot for YouTube Channel</title>
-</head>
 <body>
 
 <h1>Telegram Bot для канала на YouTube</h1>
