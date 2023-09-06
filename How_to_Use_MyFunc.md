@@ -23,4 +23,4 @@
 
 
 <h3>Пример на скриншоте</h3>
-<img src="https://i.postimg.cc/FzKwxPpy/image.jpg" width="1600px" height="800px">
+<img src="https://i.postimg.cc/FzKwxPpy/image.jpg">
