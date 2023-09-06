@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PySQLPlayground: Моя площадка для Python и SQL</title>
-</head>
 <body>
 
   <h1>PySQLPlayground: Моя игровая площадка для Python и SQL</h1>
