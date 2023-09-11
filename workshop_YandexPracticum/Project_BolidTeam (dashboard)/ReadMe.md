@@ -46,14 +46,14 @@
 
 <h2>Ознакомиться с дашбордом можно по <a href="https://datalens.yandex/hk8wbh5s41ks6">ссылке</a></h2>
 
-<p>Скриншоты:</p>
+```` <p>Скриншоты:</p>
 <ul>
   <li><img src="https://i.postimg.cc/DZydBJYn/1.jpg" alt="Снимок 1.jpg"></li>
   <li><img src="https://i.postimg.cc/3JPsVYTP/2.jpg" alt="Снимок 2.jpg"></li>
   <li><img src="https://i.postimg.cc/yNWr8GsF/3.jpg" alt="Снимок 3.jpg"></li>
   <li><img src="https://i.postimg.cc/HnQ6NcCx/4.jpg" alt="Снимок 4.jpg"></li>
   <li><img src="https://i.postimg.cc/7PBGgQkC/5.jpg" alt="Снимок 5.jpg"></li>
-</ul>
+</ul> ```
 
   
 <h2>Контактная информация:</h2>
