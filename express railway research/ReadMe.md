@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <title>Железнодорожные Перевозки: Анализ и Визуализация Данных</title>
@@ -50,7 +49,8 @@
 <p>
     import my_func as mf <!-- собственный модуль для предобработки и исследования данных -->
 </p>
-<p>Для использования этого модуля, ссылка на модуль и описание процесса установки <a href="How_to_Use_MyFunc.md">[How_to_Use_MyFunc.md](https://github.com/OophionN/PySQLPlayground-pet-projects-/tree/main/my_func)</a>..</p>
+<p>Для использования этого модуля, ссылка на модуль и описание процесса установки <a href="https://github.com/OophionN/PySQLPlayground-pet-projects-/tree/main/my_func">How_to_Use_MyFunc.md</a>.</p>
+
 
 <h2>Итоговые Выводы</h2>
 
