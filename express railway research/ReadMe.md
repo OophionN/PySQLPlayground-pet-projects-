@@ -28,20 +28,12 @@
     <li>Выводы</li>
 </ol>
 
-<h3>Инструменты</h3>
-<ul>
-    <li>Python</li>
-    <li>Jupyter Notebook</li>
-    <li>SQL</li>
-    <li>Pandas</li>
-    <li>Numpy</li>
-    <li>Matplotlib</li>
-    <li>Seaborn</li>
-    <li>Tabulate</li>
-    <li>gdown</li>
-    <li>sqlite3</li>
-    <li>gc</li>
-</ul>
+<h3 style="font-size: 24px;">Инструменты и Технологии</h3>
+<pre>
+  Python, Pandas, Plotly, sqlite3, gdown, Seaborn, SQL
+</pre>
+
+
 
 <h3>Дополнительные модули</h3>
 <p>
