@@ -35,5 +35,5 @@ module_name.close_ssh_tunnel()
 <h2>Как использовать connect_sql.py?</h2>
   <p>
     Для инструкций по подключению и использованию модуля <code>connect_sql.py</code> ознакомьтесь с файлом 
-    <a href="How_to_Use_connect_sql.py.md">How_to_Use_connect_sql.md</a>.
+    <a href="How_to_Use_connect_sql.md">How_to_Use_connect_sql.md</a>.
   </p>
