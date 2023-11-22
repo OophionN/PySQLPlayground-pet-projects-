@@ -25,38 +25,38 @@ Telegram Bot для Уведомлений Google Таблиц
     Используйте следующий код как основу:
 
     function trackChanges() {
-  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = spreadsheet.getSheetByName("Матрица Ноябрь 23г.");
-  if (!sheet) {
-    console.log("Лист 'Матрица Ноябрь 23г' не найден");
-    return;
-  }
+      var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+      var sheet = spreadsheet.getSheetByName("Матрица Ноябрь 23г.");
+      if (!sheet) {
+        console.log("Лист 'Матрица Ноябрь 23г' не найден");
+        return;
+      }
 
-  var range = sheet.getActiveRange();
-  var row = range.getRow();
-  var column = range.getColumn();
-  var columnHeader = sheet.getRange(1, column).getValue(); // Получение значения из первой строки столбца
-  var changedValue = range.getValue(); // Получение значения измененной ячейки
+      var range = sheet.getActiveRange();
+      var row = range.getRow();
+      var column = range.getColumn();
+      var columnHeader = sheet.getRange(1, column).getValue(); // Получение значения из первой строки столбца
+      var changedValue = range.getValue(); // Получение значения измененной ячейки
 
-  var message = 'Изменение в "Матрица Ноябрь 23г", строка: ' + row + ', столбец: ' + columnHeader + ', новое значение: ' + changedValue;
-  sendTelegramMessage(message);
-}
+      var message = 'Изменение в "Матрица Ноябрь 23г", строка: ' + row + ', столбец: ' + columnHeader + ', новое значение: ' + changedValue;
+      sendTelegramMessage(message);
+    }
 
 
 
-function sendTelegramMessage(message) {
-  var token = 'ВАШ_ТОКЕН'; 
-  var chatIds = [chatid пользователей];//у меня несколько пользователей 
+    function sendTelegramMessage(message) {
+      var token = 'ВАШ_ТОКЕН'; 
+      var chatIds = [chatid пользователей];//у меня несколько пользователей 
 
-  chatIds.forEach(function(chatId) {
-    var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chatId + '&text=' + encodeURIComponent(message);
-    var options = {
-      'method': 'get',
-      'muteHttpExceptions': true
-    };
-    UrlFetchApp.fetch(url, options);
-  });
-}
+      chatIds.forEach(function(chatId) {
+        var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chatId + '&text=' + encodeURIComponent(message);
+        var options = {
+          'method': 'get',
+          'muteHttpExceptions': true
+        };
+        UrlFetchApp.fetch(url, options);
+      });
+    }
 
 
 Шаг 4: Настройка Триггера
