@@ -33,7 +33,7 @@ from telegram import Bot
 #!pip install python-telegram-bot
 #!pip  install --upgrade python-telegram-bot
 
-
+#### По коду заменил названия и ссылки баз, а также словари где они использовались, у вас могут быть свои базы и названия
 # In[2]:
 
 
@@ -115,7 +115,7 @@ def upload_rest_data(data_name, dates, base_dir):
 
 
 def google_sheets_service():
-    creds = Credentials.from_authorized_user_file(r'C:\Users\maksa\all_repo\credentials.json')
+    creds = Credentials.from_authorized_user_file(r'C:\Users\maksar\all_repo\credentials.json')
     service = build('sheets', 'v4', credentials=creds)
     return service.spreadsheets()
 
@@ -135,25 +135,19 @@ def upload_to_google_sheets(data, spreadsheet_id, range_name):
 # In[11]:
 
 
-fincrm_staraya = upload_rest_data('fincrm', dates, base_dir)
-
-
-# In[14]:
-
-
-#fincrm_staraya.drop('Unnamed: 0', axis=1, inplace=True)
+1***_staraya = upload_rest_data('***', dates, base_dir)
 
 
 # In[12]:
 
 
-fincrm_staraya.sample(2)
+1***_staraya.sample(2)
 
 
 # In[13]:
 
 
-ar_base = upload_rest_data('artur', dates, base_dir)
+ar_base = upload_rest_data('****', dates, base_dir)
 
 
 # In[14]:
@@ -165,25 +159,19 @@ ar_base.sample(2)
 # In[15]:
 
 
-basis_staraya = upload_rest_data('basis', dates, base_dir)
+2***_staraya = upload_rest_data('****', dates, base_dir)
 
 
 # In[16]:
 
 
-basis_staraya.sample(2)
+2***_staraya.sample(2)
 
 
 # In[17]:
 
 
 retro_base = upload_rest_data('retro', dates, base_dir)
-
-
-# In[21]:
-
-
-#retro_base.drop('Unnamed: 0', axis=1, inplace=True)
 
 
 # In[18]:
@@ -195,76 +183,76 @@ retro_base.sample(2)
 # In[19]:
 
 
-fincrm_nofio_base = upload_rest_data('fincrm_no_fio', dates, base_dir)
+3****_nofio_base = upload_rest_data('*****', dates, base_dir)
 
 
 # In[20]:
 
 
-fincrm_nofio_base.sample(2)
+3****_nofio_base.sample(2)
 
 
 # In[21]:
 
 
-iliay_base = upload_rest_data('iliay_base', dates, base_dir)
+4****_base = upload_rest_data('*****', dates, base_dir)
 
 
 # In[22]:
 
 
-iliay_base.sample(2)
+4****_base.sample(2)
 
 
 # In[23]:
 
 
-cript_vov_base = upload_rest_data('cript_vov', dates, base_dir)
+5****_base = upload_rest_data('*****', dates, base_dir)
 
 
 # In[24]:
 
 
-cript_vov_base.sample(2)
+5****_base.sample(2)
 
 
 # In[25]:
 
 
-danila_bfl_rob_base = upload_rest_data('danila_bfl_rob', dates, base_dir)
+6****_base = upload_rest_data('****', dates, base_dir)
 
 
 # In[26]:
 
 
-danila_bfl_rob_base.sample(2) 
+6*****_base.sample(2) 
 
 
 # In[27]:
 
 
-fincrm=fincrm_staraya.copy ()
-artur=ar_base.copy()
+1***=1***.copy ()
+2****=ar_base.copy()
 basis=basis_staraya.copy()
 retro=retro_base.copy()
-fincrm_nofio=fincrm_nofio_base.copy()
-iliay=iliay_base.copy ()
-cript_vov=cript_vov_base.copy()
-danila_bfl_rob=danila_bfl_rob_base.copy()
+3****=3****.copy()
+4***=4****.copy ()
+5****=5****_base.copy()
+6****=6****_base.copy()
 
 
 # In[28]:
 
 
 filtered_dataframes = {
-    'fincrm': fincrm,
-    'artur': artur,
-    'basis': basis,
-    'retro': retro,
-    'fincrm_nofio': fincrm_nofio,
-    'iliay':iliay,
-    'cript_vov':cript_vov,
-    'danila_bfl_rob':danila_bfl_rob
+    '1': 1,
+    '2': 1,
+    '3': 1,
+    '4': 1,
+    '5': 1,
+    '6':1,
+    '7':1,
+    '8':1
     
 }
 
@@ -272,14 +260,14 @@ filtered_dataframes = {
 # In[33]:
 
 
-zakaz = pd.read_csv(f"C:\\Users\\maksa\\Desktop\\123finance\\заначка\\база ильи\\{current_date}\\заказ_нарезка\\all_orders.csv",
+zakaz = pd.read_csv(f"C:\\Users\\{current_date}\\заказ_нарезка\\all_orders.csv",
                     sep=';', encoding='Windows-1251')
 
 
 # In[34]:
 
 
-sprav = pd.read_excel(r'C:\Users\maksa\123fin\zanachka\Справочник регионов2.xlsx')
+sprav = pd.read_excel(r'C:\Users\Справочник регионов2.xlsx')
 
 
 # In[35]:
@@ -304,14 +292,14 @@ zakaz.rows.sum()
 
 
 datasets = {
-    'fincrm': fincrm,
-    'артур': artur,
-    'основа': basis,
-    'ретро': retro,
-    'fincrm_no_fio':fincrm_nofio,
-    'илья':iliay,
-    'cript_vov':cript_vov,
-    'danila':danila_bfl_rob
+    '1': 1,
+    '2': 1,
+    '3': 1,
+    '4': 1,
+    '5':1,
+    '6':1,
+    '7':1,
+    '8':1
 }
 
 
@@ -343,7 +331,7 @@ for index, row in zakaz.iterrows():
         mask = dataset["unified_name"].str.contains(r'\b' + region + r'\b', na=False, regex=True)
         selected_rows = dataset[mask].head(num_rows)
         dataset.drop(selected_rows.index, inplace=True)  # Удаляем выбранные строки из исходного датасета
-        selected_rows['partner'] = source + '_bfl_robot'  # Добавляем столбец с источником
+        selected_rows['partner'] = source + '_robot'  # Добавляем столбец с источником
         selected_rows[['birthdate','amount', 'email']] = ''  # Добавляем пустые столбцы
         container = pd.concat([container, selected_rows], ignore_index=True)
 
@@ -358,14 +346,14 @@ container
 
 
 replace_dict = {
-    'fincrm_bfl_robot': 'fin_crm_robot',
-    'артур_bfl_robot': 'artur_bfl_robot',
-    'основа_bfl_robot': 'osnova_robot',
-    'ретро_bfl_robot': 'retro_bfl_robot',
-    'fincrm_no_fio_bfl_robot':'fincrm_no_fio_bfl_robot',
-    'илья_bfl_robot':'fedor_robot',
-    'cript_vov_bfl_robot':'kripta_rob',
-    'danila_bfl_robot':'danila_bfl_rob'
+    '1': '1',
+    '2': '2',
+    '3': '3',
+    '4': '4',
+    '5':'5',
+    '6':'6',
+    '7':'7',
+    '8':'8'
 }
 
 container['partner'] = container['partner'].replace(replace_dict)
@@ -420,18 +408,18 @@ partners = container['partner'].unique()
 
 
 container.to_excel(
-    f"C:\\Users\\maksa\\Desktop\\123finance\\заначка\\база ильи\\{current_date}\\на отправку\\unity_base_{current_date}.xlsx", index=False)
+    f"C:\\Users\\maksa\\{current_date}\\на отправку\\unity_base_{current_date}.xlsx", index=False)
 
 
 # In[52]:
 
 
 # Токен бота
-bot_token = '6467070962:AAG15Y-3tMol2-fGQ_kU9d5pA03_QTR3fqI'
+bot_token = 'ВАШ ТОКЕН'
 bot = Bot(token=bot_token)
 
 # ID чата, куда будут отправляться файлы 
-chat_ids = [415338551, 389809710, 545727398]
+chat_ids = [ВАШИ ЧАТЫ]
 #, -4005852353
 
 
@@ -451,7 +439,7 @@ async def send_document(chat_id, document, caption):
 async def main():
     for partner in partners:
         partner_data = container[container['partner'] == partner]
-        file_path = f"C:\\Users\\maksa\\Desktop\\123finance\\заначка\\база ильи\\{current_date}\\на отправку\\{partner}_{current_date}_for_{formatted_tomorrow_date}.xlsx"
+        file_path = f"C:\\Users\\maksa\{current_date}\\на отправку\\{partner}_{current_date}_for_{formatted_tomorrow_date}.xlsx"
         partner_data.to_excel(file_path, index=False)
         for chat_id in chat_ids:
             with open(file_path, 'rb') as file:
@@ -515,12 +503,12 @@ def save_data_and_counts(dataset, name, current_date):
 
 
 # Вызываем функцию для каждого источника
-save_data_and_counts(fincrm, 'fincrm', current_date)
-save_data_and_counts(artur, 'artur', current_date)
-save_data_and_counts(basis, 'basis', current_date)
-save_data_and_counts(retro, 'retro', current_date)
-save_data_and_counts(fincrm_nofio, 'fincrm_no_fio', current_date)
-save_data_and_counts(iliay, 'iliay_base', current_date)
-save_data_and_counts(cript_vov, 'cript_vov', current_date)
-save_data_and_counts(danila_bfl_rob, 'danila_bfl_rob', current_date)
+save_data_and_counts(1, '1', current_date)
+save_data_and_counts(2, '2', current_date)
+save_data_and_counts(3, '3', current_date)
+save_data_and_counts(4, '4', current_date)
+save_data_and_counts(5, '5', current_date)
+save_data_and_counts(6, '6', current_date)
+save_data_and_counts(7, '7', current_date)
+save_data_and_counts(8, '8', current_date)
 
