@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-   <title>Проект обработки и отправки данных по API</title>
+   
 </head>
 <body>
     <h1>Проект обработки и отправки данных по API</h1>
@@ -78,7 +78,7 @@
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
 
-   # Проверяем, запущен ли уже цикл событий
+   ### Проверяем, запущен ли уже цикл событий
    if loop.is_running():
         loop.create_task(main(df_zakaz_region, container, encoded_token))
     else:
