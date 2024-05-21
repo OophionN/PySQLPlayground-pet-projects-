@@ -85,6 +85,8 @@ if __name__ == '__main__':
         loop.run_until_complete(main(df_zakaz_region, container, encoded_token))
         </code>
     </pre>
-    <p>Для получения более детальной информации, пожалуйста, ознакомьтесь с кодом в репозитории.</p>
+    
+<h2>Для получения более детальной информации, пожалуйста, ознакомьтесь с кодом в репозитории.</h2>
+    <p><a href="https://github.com/OophionN/PySQLPlayground-pet-projects-/blob/main/parser/parser.py">Основной скрипт для запуска </a></p>
 </body>
 </html>
