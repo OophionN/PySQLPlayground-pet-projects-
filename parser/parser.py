@@ -135,8 +135,8 @@ def process_links(product_links):
     
     return all_products
 
-# Получить ссылки на товары из первых двух страниц раздела "Камеры видеонаблюдения"
-total_pages = 48  # Обработаем только первые две страницы для тестирования
+# Получить ссылки на товары из указанного количества страниц
+total_pages = 48  # Обработаем только указанные страницы (использовал для тестирования)
 product_links = get_all_product_links(base_url, total_pages)
 print(f"Найдено {len(product_links)} товаров")
 
