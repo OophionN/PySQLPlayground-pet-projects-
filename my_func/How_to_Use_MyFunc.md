@@ -24,3 +24,46 @@
 
 <h3>Пример на скриншоте</h3>
 <img src="https://i.postimg.cc/FzKwxPpy/image.jpg">
+
+
+### А можно при необходимости использовать следующий код, для вставки сразу в своей проект
+
+```python
+import os
+import sys
+import subprocess
+
+# Блок для загрузки модуля в sys.path
+module_name = "my_func"
+
+# Проверяем, установлен ли модуль
+try:
+    __import__(module_name)
+    print(f"Модуль '{module_name}' уже установлен.")
+except ImportError:
+    print(f"Модуль '{module_name}' не найден, загружаем с GitHub...")
+    
+    # Путь к скачиванию модуля
+    github_url = "https://raw.githubusercontent.com/OophionN/PySQLPlayground-pet-projects-/main/my_func/my_func.py"
+    download_path = f"{module_name}.py"
+    
+    # Загружаем модуль с GitHub
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+        import requests
+        response = requests.get(github_url)
+        with open(download_path, 'wb') as file:
+            file.write(response.content)
+        print(f"Модуль '{module_name}' успешно загружен с GitHub.")
+        
+        # Добавляем путь к модулю в sys.path, чтобы можно было его импортировать
+        sys.path.append(os.path.abspath("."))
+    except Exception as e:
+        print(f"Произошла ошибка при загрузке модуля: {e}")
+
+# Импорт модуля
+try:
+    import my_func
+    print("Модуль успешно импортирован.")
+except ImportError as e:
+    print(f"Ошибка импорта модуля: {e}")
